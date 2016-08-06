@@ -46,6 +46,7 @@ main {
     overflow: visible;
     display: block;
     margin: 0 auto;
+    bottom: 21px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -58,7 +59,7 @@ main {
 @media only screen and (min-width: 993px) {
     #map-canvas {
         width: 500px;
-        height: 700px;
+        height: 690px;
     }
 }
 

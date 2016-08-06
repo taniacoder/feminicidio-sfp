@@ -1,9 +1,9 @@
 	function responsive() {
 	    this.altura = $(window).outerHeight()
 	    this.ancho = $(window).outerWidth()
-	    var r = document.getElementsByClassName("row")[1]
+	    var r = document.getElementById("none")
 	    var cf_r = function() {
-	        var cf = document.getElementsByClassName("container-fluid")[0]
+	        var cf = document.getElementById("container")
 	        cf.style.height = altura + "px"
 	    }
 	    if (r && ancho < 768) {
@@ -23,7 +23,7 @@
 	});
 
 	$(document).on('click', '#ver', function() {
-	    $.fn.fullpage.moveTo('estadisticas', 0);
+	    $('html,body').animate({scrollTop: $("#section1").offset().top}, 800);
 	});
 
 	function poner_modal() {
