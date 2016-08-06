@@ -7,7 +7,7 @@ var map;
                 element: document.getElementById('map-canvas'),
                 responsive: true,
                 geographyConfig: {
-                    dataUrl: '../data/peru_topo.json',
+                    dataUrl: 'data/peru_topo.json',
                     popupTemplate: function(geography, data) {
                         return [
                             "<div class=\"hoverinfo\">",
