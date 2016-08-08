@@ -1,6 +1,6 @@
-body{
+body {
     overflow-x: hidden;
-    padding:0px !important;
+    padding: 0px !important;
 }
 
 p,
@@ -11,13 +11,15 @@ h4 {
     font-family: 'Rosario', sans-serif;
 }
 
+
 /*home*/
 
 h1 {
     font-family: 'Rosario', sans-serif;
     font-size: 3rem;
     color: #ED1C55;
-    padding: 5% 0 10%;
+    margin-bottom: 0;
+    padding-bottom: 14px;
     font-weight: bold;
 }
 
@@ -34,6 +36,11 @@ h1 {
     color: #fff;
 }
 
+#hashtag{
+    color: #F64164; 
+    font-size:3rem;   
+}
+
 /*button*/
 
 .estadisticas {
@@ -41,7 +48,7 @@ h1 {
     border: none;
     color: #fff;
     padding: 5px 10px 5px 10px;
-    margin-top: 10%;
+    margin-top: 21px;
 }
 
 .estadisticas:active {
@@ -51,6 +58,7 @@ h1 {
 .estadisticas:focus {
     outline: 0px;
 }
+
 
 /*page2*/
 
@@ -62,6 +70,8 @@ h1 {
     padding-top: 2%;
     margin-bottom: 90px;
 }
+
+
 /**/
 
 [class*="col"] {
@@ -78,7 +88,6 @@ h1 {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    background-position-y: 0%;
     min-height: 100%;
     height: auto;
     width: 100%;
@@ -92,14 +101,6 @@ h1 {
     overflow-y: visible;
 }
 
-.btn-default,
-.btn-default:hover,
-.btn-default:active {
-    color: white;
-    background-color: transparent;
-    border-color: transparent;
-}
-
 .v-center {
     display: flex;
     justify-content: center;
@@ -107,52 +108,64 @@ h1 {
 }
 
 .modal-fullscreen {
-  background: transparent;
-  color:white;
+    background: transparent;
+    color: white;
 }
+
 .modal-fullscreen .modal-content {
-  background: transparent;
-  border: 0;
-  -webkit-box-shadow: none;
-  box-shadow: none;
+    background: transparent;
+    border: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
 }
+
 .modal-backdrop.modal-backdrop-fullscreen {
-  background: #ffffff;
+    background: #ffffff;
 }
+
 .modal-backdrop.modal-backdrop-fullscreen.in {
-  opacity: .95;
-  filter: alpha(opacity=97);
+    opacity: .95;
+    filter: alpha(opacity=97);
 }
+
 
 /* .modal-fullscreen size: we use Bootstrap media query breakpoints */
 
 .modal-fullscreen .modal-dialog {
-  margin: 0;
-  margin-right: auto;
-  margin-left: auto;
-  width: 100%;
+    margin: 0;
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
 }
-.modal-footer{
+
+.modal-footer {
     border: none;
 }
-.foto-modal{
+
+.foto-modal {
+    -webkit-transform: translate(7px, 42px);
+    -moz-transform: translate(7px, 42px);
+    -ms-transform: translate(7px, 42px);
+    -o-transform: translate(7px, 42px);
     transform: translate(7px, 42px);
 }
 
 @media (min-width: 768px) {
-  .modal-fullscreen .modal-dialog {
-    width: 750px;
-  }
+    .modal-fullscreen .modal-dialog {
+        width: 750px;
+    }
 }
+
 @media (min-width: 992px) {
-  .modal-fullscreen .modal-dialog {
-    width: 970px;
-  }
+    .modal-fullscreen .modal-dialog {
+        width: 970px;
+    }
 }
+
 @media (min-width: 1200px) {
-  .modal-fullscreen .modal-dialog {
-     width: 1170px;
-  }
+    .modal-fullscreen .modal-dialog {
+        width: 1170px;
+    }
 }
 
 a[data-toggle="modal"] {
@@ -192,13 +205,6 @@ a:target,
     height: 50%;
 }
 
-@media only screen and (max-width: 500px){
-    h1{
-        font-size: 2.5rem;
-    }
-
-}
-
 @media only screen and (min-width: 1200px) {
     .pr-100 {
         padding-right: 100px;
@@ -207,6 +213,13 @@ a:target,
         font-size: 6rem;
     }
 }
+
+@media only screen and (max-width: 500px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+}
+
 @media only screen and (max-width: 767px) {
     .title-chart {
         font-size: 1rem;
@@ -221,7 +234,6 @@ a:target,
     }
     h1 {
         padding: 0px;
-        margin-bottom: 0;
     }
     .estadisticas {
         padding: 0;
@@ -234,7 +246,9 @@ a:target,
         margin-bottom: 5px;
     }
     #legend th {
-        font-size: 0.8rem
+        font-size: 0.8rem;
+    }
+    #hashtag{
+        font-size: 1.5rem;
     }
 }
-
