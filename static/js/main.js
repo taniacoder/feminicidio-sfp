@@ -1,10 +1,11 @@
 	function responsive() {
-	    this.altura = $(window).outerHeight()
-	    this.ancho = $(window).outerWidth()
+	    this.altura = window.innerHeight
+	    this.ancho = window.innerWidth
 	    var r = document.getElementById("none")
 	    var cf_r = function() {
 	        var cf = document.getElementById("container")
 	        cf.style.height = altura + "px"
+	        cf.style.width = ancho + "px"
 	    }
 	    if (r && ancho < 768) {
 	        r.style.display = 'none';
@@ -104,8 +105,12 @@
 	                break;
 	        }
 	        obtener_md[k].insertBefore(modal_body, obtener_md[k].childNodes[1]);
-	        if (ancho < 500) {
+	        if (ancho < 601) {
 	            $('.modal-body').children('iframe').css("height", "180");;
+	        }
+
+	        if (ancho > 600 && ancho<1000) {
+	            $('.modal-body').children('iframe').css("height", "250");;
 	        }
 	    }
 	    footer_modal()

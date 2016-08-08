@@ -77,8 +77,13 @@
         },
         "PE.LR": {
             "department": "Lima",
-            "femicides": 293,
-            "attempted": 277
+            "femicides": 91,
+            "attempted": 86
+        },
+        "PE.LP": {
+            "department": "Lima Metropolitana",
+            "femicides": 202,
+            "attempted": 191
         },
         "PE.LO": {
             "department": "Loreto",

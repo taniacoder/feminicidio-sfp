@@ -1,3 +1,7 @@
+body{
+    overflow-x:hidden;
+}
+
 p,
 .femicide,
 .attempted,
@@ -29,6 +33,7 @@ h1 {
 .autor {
     color: #fff;
 }
+
 
 /*button*/
 
@@ -161,7 +166,16 @@ a:target,
     height: 50%;
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (min-width: 1200px) {
+    .pr-100 {
+        padding-right: 100px;
+    }
+    h1 {
+        font-size: 6rem;
+    }
+}
+
+@media only screen and (max-width: 768px) {
     .title-chart {
         font-size: 1rem;
         font-weight: bold;
@@ -187,17 +201,8 @@ a:target,
     .autor {
         margin-bottom: 5px;
     }
-
-    #legend th{
-        font-size: 0.75rem
+    #legend th {
+        font-size: 0.8rem
     }
 }
 
-@media only screen and (min-width: 1200px) {
-    .pr-100 {
-        padding-right: 100px;
-    }
-    h1 {
-        font-size: 6rem
-    }
-}

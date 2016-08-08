@@ -35,13 +35,13 @@ var map;
                             "</div>",
                         ].join('');
                     },
-                    borderWidth: 2,
+                    borderWidth: 1,
                     borderColor: '#FFFFFF',
                     popupOnHover: true,
                     highlightOnHover: true,
                     highlightBorderWidth: 2,
-                    highlightBorderColor: '#d50000',
-                    highlightFillColor: '#d50000',
+                    highlightBorderColor: '#B21540',
+                    highlightFillColor: '#B21540',
                     highlightBorderWidth: 2
                 },
                 scope: 'peru',
@@ -61,11 +61,11 @@ var map;
             var mapData;
             var mapFills = {
                 defaultFill: "#e0e0e0",
-                level1: "#ffcdd2", //  0 - 15
-                level2: "#e57373", // 16 - 30
-                level3: "#f44336", // 31 - 45
-                level4: "#d32f2f", // 46 - 60
-                level5: "#b71c1c", // 60 <
+                level1: "#FBD2DD", //  0 - 15
+                level2: "#F8A4BB", // 16 - 30
+                level3: "#F47799", // 31 - 45
+                level4: "#F14977", // 46 - 60
+                level5: "#F0104E", // 60 <
             };
 
             var statsURL = "data/femicide_stats.json";
@@ -80,8 +80,7 @@ var map;
 
                 // Hover on Lima Metropolitana will
                 // show Lima Department stats
-                mapData["PE.LP"] = mapData["PE.LR"];
-
+                //mapData["PE.LP"] = mapData["PE.LR"];
                 // Creating Filling Scale
                 keys = Object.keys(mapData);
                 femicides = keys.map(function(key) {
@@ -121,7 +120,7 @@ var map;
 
             map = new Datamap(mapOptions);
 
-            window.addEventListener('resize', function() { map.resize(); });            
+            window.addEventListener('resize', function() { map.resize(); });          
         });
     });
 })();

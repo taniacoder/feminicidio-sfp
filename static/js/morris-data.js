@@ -42,7 +42,7 @@ $(function() {
         pointSize: 6,
         hideHover: 'auto',
         resize: true,
-        lineColors: ['#FDCFD8', '#ED1C55'],
+        lineColors: ['#F47799', '#ED1C55'],
         gridTextSize: '14',
     });
 
