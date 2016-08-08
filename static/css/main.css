@@ -40,7 +40,7 @@ h1 {
     background: #F64164;
     border: none;
     color: #fff;
-    padding: 5px 10px 5px 10px;
+    padding: 1% 2%;
     margin-top: 10%;
 }
 
@@ -218,8 +218,8 @@ a:target,
         margin-bottom: 0;
     }
     .estadisticas {
-        padding: 0;
-        margin: 0;
+         padding: 5px 10px 5px 10px;
+         margin-top: 1%;
     }
     .intro {
         padding: 0 0 0 3%;
