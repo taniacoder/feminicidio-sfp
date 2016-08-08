@@ -5,7 +5,6 @@
 	    var cf_r = function() {
 	        var cf = document.getElementById("container")
 	        cf.style.height = altura + "px"
-	        cf.style.width = ancho + "px"
 	    }
 	    if (r && ancho < 768) {
 	        r.style.display = 'none';
@@ -37,13 +36,13 @@
 	}
 
 	function obtener_modal(ancho) {
-	    var modal_transparent = document.querySelectorAll("#modal-transparent")
-	    for (var j = 0; j < modal_transparent.length; j++) {
-	        modal_transparent[j].setAttribute('id', j);
+	    var modal_full_screen = document.querySelectorAll("#modal-fullscreen")
+	    for (var j = 0; j < modal_full_screen.length; j++) {
+	        modal_full_screen[j].setAttribute('id', j);
 	        var modal_dialog = document.createElement("div")
 	        modal_dialog.className = "modal-dialog"
 	        modal_dialog.innerHTML = '<div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button><h4 class="modal-title" id="myModalLabel">Modal title</h4></div><div class="modal-footer"></div></div>'
-	        modal_transparent[j].appendChild(modal_dialog)
+	        modal_full_screen[j].appendChild(modal_dialog)
 	    }
 
 	    var obtener_md = document.getElementsByClassName("modal-content")
@@ -52,7 +51,7 @@
 	            case obtener_md[0]:
 	                var modal_body = document.createElement("div")
 	                modal_body.className = "modal-body"
-	                modal_body.innerHTML = '<iframe width="100%" height="315" src="https://www.youtube.com/embed/tdM_ArIOkl8" frameborder="0" allowfullscreen></iframe><div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus iure est, ab sequi, similique dolores eius totam velit quia illo, porro vitae quaerat magnam repellat eos laborum amet molestiae natus neque repudiandae dignissimos. Maiores eius ullam ducimus corporis hic ea, quod in, aspernatur cupiditate et mollitia quasi excepturi deserunt. Commodi!</div>'
+	                modal_body.innerHTML = '<iframe width="100%" height="315" src="https://www.youtube.com/embed/tdM_ArIOkl8" frameborder="0" allowfullscreen></iframe><div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque nam ad, maxime, facere aspernatur nobis praesentium magni enim odit neque suscipit quam dolore sapiente perferendis. Cum nemo laborum inventore! Quia facilis cumque quasi architecto sapiente laudantium optio autem asperiores illum officia, quidem voluptatem hic in molestias vel eveniet itaque, praesentium magnam recusandae temporibus culpa quam maxime facere vitae. Tempore aliquam possimus eum quis ratione consequuntur quisquam minus explicabo ex voluptatum in eos eaque recusandae, fuga sapiente, sed, doloremque perspiciatis eius laboriosam modi nesciunt accusamus. Quam qui sint eos, quas odio ipsa obcaecati, a molestiae commodi iure voluptates asperiores! Provident deserunt veritatis ullam maxime recusandae, exercitationem quidem, laborum repudiandae necessitatibus minima voluptatum dicta magni placeat alias error nisi veniam, expedita quis animi? Aliquam molestiae, quidem cupiditate. Odit quibusdam nihil esse at a, repellat ab assumenda nesciunt quia ipsum beatae ducimus nobis reiciendis facere maiores qui ipsam sed cumque molestias, voluptatibus perferendis cupiditate dolor iste. Laborum debitis voluptates provident eos non et est minima, neque expedita animi fugiat eveniet totam magnam iusto dicta ipsum nesciunt a mollitia rem unde enim, libero quod. Est repellat, dolore illum. At, possimus, harum ducimus ipsam alias ex sit ea in. Dolor velit nesciunt eos a quibusdam commodi vitae totam ipsam aliquam quam. Quasi quidem dignissimos voluptas quas nesciunt vero explicabo, deleniti nisi labore. Nostrum quis iusto id ipsa adipisci sunt eum pariatur blanditiis architecto est labore, tenetur libero, quisquam cum magnam sint tempore doloremque unde ipsum incidunt quasi consectetur. Sit quas, deleniti enim voluptas. Voluptate, perspiciatis. Minima ducimus quidem numquam culpa quia dicta eaque saepe nam commodi distinctio delectus veritatis, eius. Unde repudiandae vitae adipisci voluptate natus labore minima autem ipsa, fugit, atque, animi itaque ducimus dolore voluptas corporis vero necessitatibus cupiditate, ut ipsum non. Tempore laboriosam rerum voluptatibus, porro mollitia doloribus deleniti voluptatum aspernatur sint.</div>'
 	                obtener_md[0].appendChild(modal_body)
 	                break;
 	            case obtener_md[1]:
@@ -125,11 +124,5 @@
 	    }
 	}
 
-$(".modal-transparent").on('show.bs.modal', function () {
-  setTimeout( function() {
-    $(".modal-backdrop").addClass("modal-backdrop-transparent");
-  }, 0);
-});
-$(".modal-transparent").on('hidden.bs.modal', function () {
-  $(".modal-backdrop").addClass("modal-backdrop-transparent");
-});
+$(".modal-fullscreen").on('show.bs.modal', function () {  setTimeout( function() {    $(".modal-backdrop").addClass("modal-backdrop-fullscreen");  }, 0);});
+$(".modal-fullscreen").on('hidden.bs.modal', function () {  $(".modal-backdrop").addClass("modal-backdrop-fullscreen");});
