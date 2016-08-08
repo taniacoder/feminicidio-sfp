@@ -53,7 +53,9 @@ h1 {
 }
 
 /*page2*/
-
+.pl-5 {
+    padding-left: 5%;
+}
 .text-2 {
     padding: 5% 3% 3% 0;
 }
@@ -61,6 +63,9 @@ h1 {
 .est-2 {
     padding-top: 2%;
     margin-bottom: 90px;
+}
+.text-map {
+    margin-right: 5%; 
 }
 /**/
 
