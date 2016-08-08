@@ -1,4 +1,6 @@
 body{
+    overflow-x: hidden;
+    padding:0px !important;
 }
 
 p,
@@ -8,7 +10,6 @@ th,
 h4 {
     font-family: 'Rosario', sans-serif;
 }
-
 
 /*home*/
 
@@ -33,7 +34,6 @@ h1 {
     color: #fff;
 }
 
-
 /*button*/
 
 .estadisticas {
@@ -51,7 +51,6 @@ h1 {
 .estadisticas:focus {
     outline: 0px;
 }
-
 
 /*page2*/
 
@@ -133,6 +132,13 @@ h1 {
   margin-left: auto;
   width: 100%;
 }
+.modal-footer{
+    border: none;
+}
+.foto-modal{
+    transform: translate(7px, 42px);
+}
+
 @media (min-width: 768px) {
   .modal-fullscreen .modal-dialog {
     width: 750px;
