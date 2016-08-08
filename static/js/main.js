@@ -4,7 +4,12 @@
 	    var r = document.getElementById("none")
 	    var cf_r = function() {
 	        var cf = document.getElementById("container")
-	        cf.style.height = altura + "px"
+	        if (ancho < 768){
+	        cf.style.height = altura-48 + "px"
+	    	}
+	    	else{
+	    	cf.style.height = altura + "px"	
+	    	}
 	    }
 	    if (r && ancho < 768) {
 	        r.style.display = 'none';
@@ -119,7 +124,7 @@
 	    var poner_redes = document.getElementsByClassName("modal-footer")
 	    for (z = 0; z < poner_redes.length; z++) {
 	        var redes = document.createElement("div")
-	        redes.innerHTML = '<div class="redes-sociales"><!--Twitter--><a href="https://twitter.com/share" class="twitter-share-button">Tweet</a> <!--Twitter--><!--facebook--><div class="fb-like" data-href="" data-layout="standard" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div><!--facebook--></div>'
+	        redes.innerHTML = '<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>'
 	        poner_redes[z].appendChild(redes)
 	    }
 	}
