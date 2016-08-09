@@ -32,6 +32,7 @@ h1 {
 .text-home,
 .autor {
     color: #fff;
+    font-size: 2rem;
 }
 
 /*button*/
@@ -42,6 +43,7 @@ h1 {
     color: #fff;
     padding: 1% 2%;
     margin-top: 10%;
+    font-weight: bold;
 }
 
 .estadisticas:active {
@@ -209,7 +211,7 @@ a:target,
         padding-right: 100px;
     }
     h1 {
-        font-size: 6rem;
+        font-size: 8rem;
     }
 }
 @media only screen and (max-width: 767px) {
@@ -229,14 +231,16 @@ a:target,
         margin-bottom: 0;
     }
     .estadisticas {
-         padding: 5px 10px 5px 10px;
+         padding: 3px 4px;
          margin-top: 1%;
+         font-size: 10px;
     }
     .intro {
         padding: 0 0 0 3%;
     }
     .autor {
         margin-bottom: 5px;
+        font-size: 1.5rem;
     }
     #legend th {
         font-size: 0.8rem
