@@ -250,5 +250,6 @@ a:target,
     }
     #hashtag{
         font-size: 1.5rem;
+        margin:0;
     }
 }
