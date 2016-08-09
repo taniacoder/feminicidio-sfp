@@ -81,6 +81,16 @@ h1 {
 }
 
 /**/
+/*modal*/
+.text-modal {
+    font-size: 1.4rem;
+    text-align: justify;
+}
+.comillas {
+    font-size: 1.9rem;
+    text-align: center;
+}
+/**/
 
 [class*="col"] {
     padding: 0;
@@ -116,7 +126,7 @@ h1 {
 }
 
 .modal-fullscreen {
-    background: transparent;
+    background: rgba(0, 0, 0, 0.5);
     color: white;
 }
 
